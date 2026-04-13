@@ -201,6 +201,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.querySelector('.slider-btn.prev');
     const nextBtn = document.querySelector('.slider-btn.next');
 
+
+    /* hcer desapaecer el Logo con el Scroll */
+    const logo = document.querySelector('.image_logo_hero');
+
+window.addEventListener('scroll', () => {
+    const heroHeight = window.innerHeight;
+    const progress = window.scrollY / heroHeight;
+
+    logo.style.opacity = Math.max(1 - progress * 2, 0);
+    logo.style.transform = `translate(-50%, -50%) scale(${Math.max(1 - progress * 0.2, 0.9)})`;
+});
+
+
+
     // 1. Video Scroll Control
     let lastScrollY = window.scrollY;
     let ticking = false;

@@ -16,7 +16,8 @@
         content="Especialistas en reformas integrales, cocinas y baños con más de 25 años de experiencia.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://multiserviciosanyber.com">
-    <meta property="og:image" content="https://carmonabuilderweb.github.io/multiservicios_anyber_optimizado/images/logo_meta_image.jpeg">
+    <meta property="og:image"
+        content="https://carmonabuilderweb.github.io/multiservicios_anyber_optimizado/images/logo_meta_image.jpeg">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Imagen del logotipo de la empresa. Una empresa de multiservi y reformas." />
@@ -271,8 +272,78 @@
                         </div>
                     </div>
                 </div> -->
+                <!-- SLIDER PARA PC -->
+                <div class="swiper mySwiperDesktop">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="wrapper-slider-image">
+                                <img src="./images/movimientos/movimientos01.jpeg" alt="">
+                                <div>
+                                    <a href="" class="btn-slider-image btn">Ver más</a>
+                                    <p>MOVIMIENTOS DE TIERRA Y EXCAVACIONES</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrapper-slider-image">
+                                <img src="https://picsum.photos/seed/proj1/600/800" alt="">
+                                <div>
+                                    <a href="" class="btn-slider-image btn">Ver más</a>
+                                    <p>Colocación de ventanas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrapper-slider-image">
+                                <img src="https://picsum.photos/seed/proj2/600/800" alt="">
+                                <div>
+                                    <a href="" class="btn-slider-image btn">Ver más</a>
+                                    <p>Colocación de ventanas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrapper-slider-image">
+                                <img src="https://picsum.photos/seed/proj3/600/800" alt="">
+                                <div>
+                                    <a href="" class="btn-slider-image btn">Ver más</a>
+                                    <p>Colocación de ventanas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrapper-slider-image">
+                                <img src="https://picsum.photos/seed/proj4/600/800" alt="">
+                                <div>
+                                    <a href="" class="btn-slider-image btn">Ver más</a>
+                                    <p>Colocación de ventanas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrapper-slider-image">
+                                <img src="https://picsum.photos/seed/proj5/600/800" alt="">
+                                <div>
+                                    <a href="" class="btn-slider-image btn">Ver más</a>
+                                    <p>Colocación de ventanas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wrapper-slider-image">
+                                <img src="https://picsum.photos/seed/proj6/600/800" alt="">
+                                <div>
+                                    <a href="" class="btn-slider-image btn">Ver más</a>
+                                    <p>Colocación de ventanas</p>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="swiper mySwiper">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!--SLIDER PARA MOVIL -->
+                <div class="swiper mySwiperMobile">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="wrapper-slider-image">
@@ -496,12 +567,39 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         AOS.init();
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-            },
+
+
+        const isMobile = window.innerWidth < 1024;
+
+        if(isMobile){
+        var swiper = new Swiper(".mySwiperMobile", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        dynamicBullets: true,
+                    },
         });
+        }else{
+    var swiper = new Swiper(".mySwiperDesktop", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+        }
+
+
+
+
     </script>
     <!-- Swiper JS -->
 </body>

@@ -43,10 +43,10 @@
 
             <nav id="nav-menu">
                 <ul>
-                    <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="./index.html" data-i18n="nav_home">Inicio</a></li>
                     <li><a href="#empresa" data-i18n="nav_company">Empresa</a></li>
                     <li><a href="#servicios" data-i18n="nav_services">Servicios</a></li>
-                    <li><a href="#proyectos" data-i18n="nav_projects">Proyectos</a></li>
+                    <li><a href="./proyects.html" data-i18n="nav_projects">Proyectos</a></li>
                     <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
                 </ul>
             </nav>
@@ -348,7 +348,7 @@
                         <div class="swiper-slide">
                             <div class="wrapper-slider-image">
                                 <img src="./images/movimientos/movimientos01.jpeg" alt="">
-                                <div>
+                                <div class="wrapper-slider-image_home">
                                     <a href="" class="btn-slider-image btn">Ver más</a>
                                     <p>MOVIMIENTOS DE TIERRA Y EXCAVACIONES</p>
                                 </div>
@@ -357,7 +357,7 @@
                         <div class="swiper-slide">
                             <div class="wrapper-slider-image">
                                 <img src="https://picsum.photos/seed/proj1/600/800" alt="">
-                                <div>
+                                <div class="wrapper-slider-image_home">
                                     <a href="" class="btn-slider-image btn">Ver más</a>
                                     <p>Colocación de ventanas</p>
                                 </div>
@@ -366,7 +366,7 @@
                         <div class="swiper-slide">
                             <div class="wrapper-slider-image">
                                 <img src="https://picsum.photos/seed/proj2/600/800" alt="">
-                                <div>
+                                <div class="wrapper-slider-image_home">
                                     <a href="" class="btn-slider-image btn">Ver más</a>
                                     <p>Colocación de ventanas</p>
                                 </div>
@@ -375,7 +375,7 @@
                         <div class="swiper-slide">
                             <div class="wrapper-slider-image">
                                 <img src="https://picsum.photos/seed/proj3/600/800" alt="">
-                                <div>
+                                <div class="wrapper-slider-image_home">
                                     <a href="" class="btn-slider-image btn">Ver más</a>
                                     <p>Colocación de ventanas</p>
                                 </div>
@@ -384,7 +384,7 @@
                         <div class="swiper-slide">
                             <div class="wrapper-slider-image">
                                 <img src="https://picsum.photos/seed/proj4/600/800" alt="">
-                                <div>
+                                <div class="wrapper-slider-image_home">
                                     <a href="" class="btn-slider-image btn">Ver más</a>
                                     <p>Colocación de ventanas</p>
                                 </div>
@@ -393,7 +393,7 @@
                         <div class="swiper-slide">
                             <div class="wrapper-slider-image">
                                 <img src="https://picsum.photos/seed/proj5/600/800" alt="">
-                                <div>
+                                <div class="wrapper-slider-image_home">
                                     <a href="" class="btn-slider-image btn">Ver más</a>
                                     <p>Colocación de ventanas</p>
                                 </div>
@@ -402,7 +402,7 @@
                         <div class="swiper-slide">
                             <div class="wrapper-slider-image">
                                 <img src="https://picsum.photos/seed/proj6/600/800" alt="">
-                                <div>
+                                <div class="wrapper-slider-image_home">
                                     <a href="" class="btn-slider-image btn">Ver más</a>
                                     <p>Colocación de ventanas</p>
                                 </div>
@@ -415,7 +415,7 @@
 
 
                 <div class="text-center mt-50">
-                    <a href="#" class="btn btn-primary" data-i18n="all_projects">Ver todos los proyectos</a>
+                    <a href="./proyects.html" class="btn btn-primary" data-i18n="all_projects">Ver todos los proyectos</a>
                 </div>
             </div>
         </section>
@@ -569,7 +569,7 @@
         AOS.init();
 
 
-        const isMobile = window.innerWidth < 1024;
+        const isMobile = window.innerWidth < 640;
 
         if(isMobile){
         var swiper = new Swiper(".mySwiperMobile", {

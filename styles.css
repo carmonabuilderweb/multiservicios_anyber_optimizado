@@ -81,6 +81,40 @@ a {
     transition: var(--transition);
 }
 
+/* MOBIL FIRST */
+
+
+    .wrapper-slider-image_home{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    width: 300px;
+    height: 150px;
+    background: #000000a1;
+    }
+
+
+
+
+
+.wrapper-slider-image__proyects{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 85%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    width: 300px;
+    height: 150px;
+}
+
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
@@ -661,19 +695,6 @@ nav ul li a:hover {
         width: 100%;
     }
 
-    .wrapper-slider-image div{
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5px;
-    width: 300px;
-    height: 150px;
-    background: #000000a1;
-    }
 
     .wrapper-slider-image div p {
         color: #fff;
@@ -954,6 +975,30 @@ footer {
     transition: var(--transition);
 }
 
+
+
+
+
+/* 
+***********************
+***********************
+***********************
+*/
+
+/* [SECTION AND CARD MF @media tablet] */
+@media (min-width: 768px) {
+
+}
+
+
+/* [SECTION AND CARD MF @media desktop] */
+@media (min-width: 1200px) {
+
+}
+
+
+
+
 /* Responsive */
 @media (max-width: 1024px) {
     .section-title-bg {
@@ -972,14 +1017,14 @@ footer {
 
 /* MOBIL */
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
 
 
-    .mySwiperDesktop {
+.mySwiperDesktop, .DesktopHidde {
   display: none;
 }
 
-.mySwiperMobile {
+.mySwiperMobile, .MobilHidde {
   display: block;
 }
 
@@ -1104,3 +1149,17 @@ footer {
         scroll-snap-align: center;
     }
 }
+
+
+
+/* 
+
+
+
+Tailwind CSS emplea 640px, 768px, 1024px, 1280px
+
+
+
+
+
+*/
